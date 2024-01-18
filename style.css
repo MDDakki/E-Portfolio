@@ -5,12 +5,24 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: 'Roboto' sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 
 li {
     list-style-type: none;
 }
+
+section {
+    background-color: rgb(245, 245, 245);
+}
+
+/* Mich  */
+
+#start {
+    min-height: 100vh;
+}
+
+ /* NAV */
 
 nav {
     display: flex;
@@ -23,6 +35,7 @@ nav {
 }
 
 #mein__logo {
+    margin-top: 5px;
     width: 80px;
     height: 50px;
     filter: invert(1);
@@ -40,5 +53,9 @@ nav {
     text-decoration: none;
     font-size: 16px;
     color: #242424;
-    font-weight: 600;
+    font-weight: 700;
+}
+
+.fa-solid {
+    font-size: 20px;
 }
