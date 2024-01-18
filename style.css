@@ -12,14 +12,53 @@ li {
     list-style-type: none;
 }
 
+p {
+    line-height: 1.5;
+    font-size: 16px;
+}
 section {
     background-color: rgb(245, 245, 245);
+}
+
+.blau {
+    color: #015294  ;
 }
 
 /* Mich  */
 
 #start {
     min-height: 100vh;
+}
+
+.fa-github {
+    color: #015294;
+}
+
+.header {
+    position: absolute;
+    /* mitte */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* width 100% macht es responsive, wenn nur width: 1000px dann ist es nicht mehr responsive / wird die grosse nicht ändern*/
+    width: 100%; 
+    max-width: 1000px;
+}
+
+.header__para {
+    font-size: 24px;
+    max-width: 800px;
+}
+
+.titel {
+    font-size: 120px;
+    margin-bottom: 4px;
+    text-align: left;
+    line-height: 1;
+}
+
+.sub__titel {
+    color: #015294;
 }
 
  /* NAV */
