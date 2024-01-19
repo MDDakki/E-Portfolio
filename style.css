@@ -12,6 +12,10 @@ li {
     list-style-type: none;
 }
 
+a {
+    text-decoration: none;
+}
+
 p {
     line-height: 1.5;
     font-size: 16px;
@@ -34,6 +38,18 @@ section {
     color: #015294;
 }
 
+.click {
+    transform: all 300ms ease;
+}
+
+.click:hover {
+    transform: scale(1.1) ;
+}
+
+.click:active {
+    transform: scale(0.8);
+}
+
 .header {
     position: absolute;
     /* mitte */
@@ -43,11 +59,36 @@ section {
     /* width 100% macht es responsive, wenn nur width: 1000px dann ist es nicht mehr responsive / wird die grosse nicht ändern*/
     width: 100%; 
     max-width: 1000px;
+    padding: 0 30px;
 }
 
 .header__para {
     font-size: 24px;
     max-width: 800px;
+}
+
+.social__list {
+    margin-top: 8px;
+    display: flex;
+}
+
+.social__link {
+    background-color: #015294;
+    color: white;
+    padding: 6px;
+    width: 32px;
+    height: 32px;
+    font-size: 18px;
+    margin-right: 12px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fa-github {
+    color: white;
+    font-size: 22px;
 }
 
 .titel {
@@ -71,6 +112,7 @@ nav {
     max-width: 1200px;
     margin: 0 auto;
     height: 100px;
+    padding: 0 20;
 }
 
 #mein__logo {
@@ -95,6 +137,18 @@ nav {
     font-weight: 700;
 }
 
-.fa-solid {
-    font-size: 20px;
-}
+/* Mail */
+
+.mail__taste {
+    width: 70px;
+    height: 70px;
+    font-size: 32px;
+    border-radius: 50%;
+    border: none;
+    background-color: #242424;
+    color: white;
+    cursor: pointer;
+    position: absolute;
+    bottom: 32px;
+    right: 40px;
+} 
