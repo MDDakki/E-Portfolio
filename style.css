@@ -25,8 +25,42 @@ section {
     background-color: rgb(245, 245, 245);
 }
 
+
+footer a {
+    font-weight: bold;
+}
+
+
 .blau {
     color: #015294  ;
+}
+
+.link__schweben  {
+    position: relative;
+}
+
+.link__schweben::after {
+    content: ''; /* muss lehr sein */
+    position: absolute;
+    bottom: -3px;
+    height: 3px;
+    width: 0;
+    right: 0;
+    transition: all 300ms ease;
+}
+
+.link__schweben--white::after {
+    background-color: white;
+}
+
+.link__schweben--black::after {
+    background-color: #242424;
+
+}
+
+.link__schweben:hover::after {
+    left: 0;
+    width: 100%;
 }
 
 /* Mich  */
@@ -195,6 +229,10 @@ nav {
 
 /*  Projekte  */
 
+.projekt {
+    margin-bottom: 135px;
+}
+
 .projekt__liste  {
     margin-left: 46px;
 }
@@ -205,7 +243,9 @@ nav {
     text-align: center;
 }
 
+/* padding top & bottom und .row fur margin left and right */
 .container {
+    width: 100%;
     padding: 50px 0;
 }
 
@@ -218,6 +258,12 @@ nav {
 
 .projekt__img  {
     width: 100%;
+    transition: all 800ms ease;
+}
+
+.projekt:hover .projekt__img {
+    transform: scale(1.07);
+    filter: blur(5px);
 }
 
 .projekt__wrapper {
@@ -273,5 +319,61 @@ nav {
 
 .projekt__description--sub-titel {
     margin-bottom: 12px;
-    font-size: 24px;
+    font-size: 18px;
+}
+
+
+/* Footer  */
+footer {
+    background-color: #242424;
+    padding: 30px 0;
+    text-align: center;
+    color: white;
+}
+
+.footer__row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px; 
+}
+
+.footer__logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.footer__img {
+    width: 80px; 
+    margin-right: 10px;
+    transition: transform 0.3s ease;
+}
+
+.footer__img:hover {
+    transform: scale(1.1); 
+}
+
+.footer__social--liste {
+    display: flex;
+    gap: 20px; 
+}
+
+.footer__social--link {
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s ease;
+    font-size: 14px;
+}
+
+.footer__social--link:hover {
+    color: #64ffda; 
+}
+
+.footer__copyright {
+    font-size: 16px; 
+    margin-top: 20px; 
+}
+
+.footer__social--link:hover::before {
+    content: "→ ";
 }
