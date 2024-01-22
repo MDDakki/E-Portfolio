@@ -6,6 +6,15 @@
     <link rel="stylesheet" href="style.css">
     <script src="app.js" defer></script>
     <script src="https://kit.fontawesome.com/6d2ddd682f.js" crossorigin="anonymous"></script>
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init("KInLe15jJWbzGK_lv");
+   })();
+</script>
+
     <title>Portfolio</title>
 </head>
 <body>
@@ -92,14 +101,14 @@
                     <h3 class="modal__sub-titel modal__sub-titel--kontakt">
                          Lorem ipsum dolor sit amet consectetur.
                     </h3>
-                    <form id="kontakt__form" action="">
+                    <form id="kontakt__form" onsubmit="Kontakt(event)">
                         <div class="form__item">
                             <label class="form__item--label">Name</label>
                             <input class="input" name="user_name" type="text" required></input>
                         </div>
                         <div class="form__item">
                             <label class="form__item--label">E-Mail</label>
-                            <input class="input" name="user_email" ty e="email" required></input>
+                            <input class="input" name="user_email" type="email" required></input>
                         </div>
                         <div class="form__item">
                             <label class="form__item--label">Nachricht</label>
