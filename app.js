@@ -19,6 +19,13 @@ function Kontakt(event) {
     });
 }
 
-function ToggleModal() {
+let isModalOffen = false
 
+function ToggleModal() {
+    if (isModalOffen) {
+        isModalOffen = false;
+        return document.body.classList.remove("modal__offen");
+      }
+      isModalOffen = true;
+      document.body.classList += " modal__offen";
 }
