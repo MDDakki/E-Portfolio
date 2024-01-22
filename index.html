@@ -34,7 +34,7 @@
             <li class="nav__link">
                 <a href="#" class="nav__link--anchor link__schweben link__schweben--black" onclick="ToggleModal()">Kontakt</a>
             </li>
-            <li class="nav__link click">
+            <li class="nav__link click" onclick="ToggleMode()">
                 <a href="#" class="nav__link--anchor link__schweben link__schweben--black"><i class="fa-solid fa-circle-half-stroke"></i></a>
             </li>
         </ul>
@@ -46,7 +46,7 @@
                 <p class="header__para">
                     Ich suche motiviert nach einer <b class="blau">Ausbildung</b> und bringe nicht nur Leidenschaft für die gewünschte Richtung mit, sondern auch Überzeugung, dass meine positive Einstellung und Einsatzbereitschaft mich zu einem wertvollen Kandidaten machen.
                     <br>
-                    <b class="blau">Hier ist etwas mehr über mich</b> 
+                    <b class="blau click" onclick="ToggleModal()">Hier ist etwas mehr über mich</b> 
                     <div class="social__list">
                         <a href="https://github.com/MDDakki" target="_blank" class="social__link click">
                             <i class="fa-brands fa-github"></i>
@@ -97,6 +97,7 @@
                 </div>
             </div>
             <div class="modal__half modal__kontakt">
+                <i class="fas fa-times modal__exit click" onclick="ToggleModal()"></i>
                     <h3 class="modal__titel modal__titel--kontakt">Lass uns reden</h3>
                     <h3 class="modal__sub-titel modal__sub-titel--kontakt">
                          Lorem ipsum dolor sit amet consectetur.
@@ -125,7 +126,6 @@
                         Vielen Dank für die Nachricht, ich freue mich darauf, bald mit Ihnen zu sprechen
                     </div>
             </div>
-            <i class="fas fa-times modal__exit click"></i>
         </div>
 </section>
 <section id="projekte">
@@ -215,7 +215,7 @@
             <div class="footer__social--liste">
                 <a href="#" class="footer__social--link link__schweben  link__schweben--white">GITHUB</a>
                 <a href="#" class="footer__social--link link__schweben  link__schweben--white" onclick="ToggleModal()">KONTAKT</a>
-                <a href="#" class="footer__social--link link__schweben  link__schweben--white">LEBENSLAUF</a>
+                <a href="#" class="footer__social--link l ink__schweben  link__schweben--white">LEBENSLAUF</a>
             </div>
         </div>
         <div class="footer__copyright">

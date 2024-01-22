@@ -1,3 +1,17 @@
+let isModalOffen = false
+let ModeToggle = false 
+
+function ToggleMode() {
+  ModeToggle = !ModeToggle
+  if (ModeToggle) {
+    document.body.classList += " dark"
+  }
+  else {
+    document.body.classList.remove("dark")
+  }
+}
+
+
 function Kontakt(event) {
   event.preventDefault();
   const laden = document.querySelector(".modal__overlay--laden");
@@ -19,7 +33,6 @@ function Kontakt(event) {
     });
 }
 
-let isModalOffen = false
 
 function ToggleModal() {
     if (isModalOffen) {
