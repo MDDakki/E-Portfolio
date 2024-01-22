@@ -88,8 +88,35 @@
                 </div>
             </div>
             <div class="modal__half modal__kontakt">
-                <h3>Lass uns unterhalten</h3>
+                    <h3 class="modal__titel modal__titel--kontakt">Lass uns reden</h3>
+                    <h3 class="modal__sub-titel modal__sub-titel--kontakt">
+                         Lorem ipsum dolor sit amet consectetur.
+                    </h3>
+                    <form id="kontakt__form" action="">
+                        <div class="form__item">
+                            <label class="form__item--label">Name</label>
+                            <input class="input" name="user_name" type="text" required></input>
+                        </div>
+                        <div class="form__item">
+                            <label class="form__item--label">E-Mail</label>
+                            <input class="input" name="user_email" ty e="email" required></input>
+                        </div>
+                        <div class="form__item">
+                            <label class="form__item--label">Nachricht</label>
+                            <textarea class="input" name="nachricht" type="text" required></textarea>
+                        </div>
+                        <div class="taste__wrapper">
+                            <button id="kontakt__submit" class="form__submit">Schicken</button> 
+                        </div>
+                    </form>
+                    <div class="modal__overlay modal__overlay--laden">
+                        <i class="fas fa-spinner"> </i>
+                    </div>
+                    <div class="modal__overlay modal__overlay--ok">
+                        Vielen Dank für die Nachricht, ich freue mich darauf, bald mit Ihnen zu sprechen
+                    </div>
             </div>
+            <i class="fas fa-times modal__exit click"></i>
         </div>
 </section>
 <section id="projekte">

@@ -74,6 +74,7 @@ footer a {
 }
 
 .click {
+    cursor: pointer;
     transform: all 300ms ease;
 }
 
@@ -229,6 +230,56 @@ nav {
 
 /* Modal  */
 
+input, textarea {
+    width: 100%;
+    background-color: #242424;
+    color: white;
+    outline: none;
+    border: 1px solid #c0c4cc;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    height: 40px;
+    transition: all 300ms ease;
+}
+
+textarea {
+    resize: vertical;
+    height: 100px;
+    max-height: 300px;
+}
+
+textarea::-webkit-scrollbar {
+    width: 8px; 
+}
+
+textarea::-webkit-scrollbar-thumb {
+    background-color: #3498db; 
+    border-radius: 4px; 
+}
+
+textarea::-webkit-scrollbar-track {
+    background-color: #242424;
+}
+
+textarea::-webkit-scrollbar-corner {
+    background-color: #242424;
+}
+  
+label {
+    font-size: 14px;
+    font-weight: bold;
+    margin-top: 6px;
+}
+
+input:hover, textarea:hover {
+    border-color: #dcdfe6;
+}
+ 
+input:focus, textarea:focus {
+    border-color: #015294;
+}
+
 .modal {
     position: absolute;
     left: 50%;
@@ -246,6 +297,8 @@ nav {
 .modal__half {
     width: 50%;
     padding: 40px 72px;
+    position: relative;
+
 }
 
 .modal__about {
@@ -261,6 +314,7 @@ nav {
 
 .modal__sub-titel {
     margin: 12px 0 24px 0;
+    font-size: 14px;
 }
 
 .modal__para {
@@ -281,6 +335,7 @@ nav {
     flex-direction: column;
     align-items: center;
     transition: all 400ms ease;
+    
 }
 
 .modal__sprache:hover {
@@ -307,6 +362,92 @@ nav {
     background-color: #242424;
     color: white;
 }
+
+/* common class */
+.modal__overlay { 
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal__overlay--laden {
+    background-color: #242424;
+    font-size: 80px;
+    z-index: -1;
+}
+
+.modal__overlay--ok  {
+    background-color: #4bb543;
+    font-size: 40px;
+    font-weight: 700;
+    text-align: center;
+    padding: 20px;
+}
+
+.modal__exit {
+    position: absolute;
+    top: 30px;
+    right: 40px;
+    color: white;
+    font-size: 36px;
+    z-index: 100;
+}
+
+.fa-spinner {
+    animation: spinner 750ms infinite linear;
+}
+
+@keyframes spinner {
+    0% {
+        transform: rotate(0) ;
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+
+}
+
+.taste__wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+
+.form__item {
+    margin-bottom: 20px;
+}
+  
+
+.form__submit {
+    background-color: #015294;
+    border: 2px solid #015294;
+    color: white;
+    font-weight: 700;
+    width: 100%;
+    cursor: pointer;
+    padding: 12px 24px;
+    font-size: 20px;
+    transition: all 300ms ease;
+}
+
+
+.form__submit:hover {
+    border-color: white;
+    background-color: transparent;
+
+}
+
+.form__submit:active {
+    border-color: #015294;
+    color: #015294;
+}
+
 
 
 /*  Projekte  */
