@@ -1,16 +1,36 @@
-let isModalOffen = false
-let ModeToggle = false 
+let isModalOffen = false;
+let ModeToggle = localStorage.getItem("darkMode") === "true";
 
 function ToggleMode() {
-  ModeToggle = !ModeToggle
+  ModeToggle = !ModeToggle;
+  localStorage.setItem("darkMode", ModeToggle.toString());
+
   if (ModeToggle) {
-    document.body.classList += " dark"
-  }
-  else {
-    document.body.classList.remove("dark")
+    document.body.classList.add("dark");
+  } else {
+    document.body.classList.remove("dark");
   }
 }
 
+if (ModeToggle) {
+  document.body.classList.add("dark");
+}
+
+
+const scaleFactor = 1 / 20;
+
+function HinterGrund(event) {
+  const formen = document.querySelectorAll(".form");
+  const x = event.clientX * scaleFactor;
+  const y = event.clientY * scaleFactor;
+
+  for (let i = 0; i < formen.length; ++i) {
+    const isOdd = i % 2 !== 0;
+    const boolInt = isOdd ? -1 : 1;
+
+    formen[i].style.transform = `translate(${x * boolInt}px, ${y * boolInt}px) rotate(${x * boolInt * 10}deg)`
+  }
+}
 
 function Kontakt(event) {
   event.preventDefault();
@@ -33,7 +53,6 @@ function Kontakt(event) {
     });
 }
 
-
 function ToggleModal() {
     if (isModalOffen) {
         isModalOffen = false;
@@ -41,4 +60,5 @@ function ToggleModal() {
       }
       isModalOffen = true;
       document.body.classList += " modal__offen";
+      
 }

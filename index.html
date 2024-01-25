@@ -1,81 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <script src="app.js" defer></script>
     <script src="https://kit.fontawesome.com/6d2ddd682f.js" crossorigin="anonymous"></script>
-    <script type="text/javascript"
-        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
-</script>
-<script type="text/javascript">
-   (function(){
-      emailjs.init("KInLe15jJWbzGK_lv");
-   })();
-</script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init("KInLe15jJWbzGK_lv");
+        })();
+    </script>
 
     <title>Portfolio</title>
 </head>
+
 <body>
-<section id="start">
-    <nav>
-        <figure>
-            <img id="mein__logo" src="assets/MD-17-1-2024 (2).png" alt="">
-        </figure>
-         <!-- block__element--modifier -->
-        <ul class="nav__link--liste"> 
-            <li class="nav__link">
-                <a href="#" class="nav__link--anchor link__schweben link__schweben--black">Über mich</a>
-            </li>
-            <li class="nav__link">
-                <a href="#" class="nav__link--anchor link__schweben link__schweben--black">Projekte</a>
-            </li>
-            <li class="nav__link">
-                <a href="#" class="nav__link--anchor link__schweben link__schweben--black" onclick="ToggleModal()">Kontakt</a>
-            </li>
-            <li class="nav__link click" onclick="ToggleMode()">
-                <a href="#" class="nav__link--anchor link__schweben link__schweben--black"><i class="fa-solid fa-circle-half-stroke"></i></a>
-            </li>
-        </ul>
-    </nav>
-    <header class="header">
+    <section id="start" onmousemove="HinterGrund(event)">
+        <nav>
+            <figure>
+                <img id="mein__logo" src="assets/MD-17-1-2024 (2).png" alt="">
+            </figure>
+            <!-- block__element--modifier -->
+            <ul class="nav__link--liste">
+                <li class="nav__link">
+                    <a href="#" class="nav__link--anchor link__schweben link__schweben--black">Über mich</a>
+                </li>
+                <li class="nav__link">
+                    <a href="#projekte" class="nav__link--anchor link__schweben link__schweben--black">Projekte</a>
+                </li>
+                <li class="nav__link">
+                    <a href="#" class="nav__link--anchor link__schweben link__schweben--black"
+                        onclick="ToggleModal()">Kontakt</a>
+                </li>
+                <li class="nav__link click" onclick="ToggleMode()">
+                    <a href="#" class="nav__link--anchor link__schweben link__schweben--black"><i
+                            class="fa-solid fa-circle-half-stroke"></i></a>
+                </li>
+            </ul>
+        </nav>
+        <header class="header">
             <div class="header__content">
-                <h1 class="titel">Hey</h1>
+                <h1 class="titel titel__hey">Hey</h1>
                 <h1 class="titel sub__titel">Ich bin Mohamad</h1>
                 <p class="header__para">
-                    Ich suche motiviert nach einer <b class="blau">Ausbildung</b> und bringe nicht nur Leidenschaft für die gewünschte Richtung mit, sondern auch Überzeugung, dass meine positive Einstellung und Einsatzbereitschaft mich zu einem wertvollen Kandidaten machen.
+                    Ich suche motiviert nach einer <b class="blau">Ausbildung</b> und bringe nicht nur Leidenschaft für
+                    die gewünschte Richtung mit, sondern auch Überzeugung, dass meine positive Einstellung und
+                    Einsatzbereitschaft mich zu einem wertvollen Kandidaten machen.
                     <br>
-                    <b class="blau click" onclick="ToggleModal()">Hier ist etwas mehr über mich</b> 
-                    <div class="social__list">
-                        <a href="https://github.com/MDDakki" target="_blank" class="social__link click">
-                            <i class="fa-brands fa-github"></i>
-                        </a>
-                        <a href="" class="social__link click">
-                            <i class="fa-solid fa-file-pdf"></i>
-                        </a>
-                        <a href="" class="social__link click">
-                            <i class="fa-solid fa-envelope"></i>
-                        </a>
-                    </div>
+                    <b class="blau click" onclick="ToggleModal()">Hier ist etwas mehr über mich</b>
+                <div class="social__list">
+                    <a href="https://github.com/MDDakki" target="_blank" class="social__link click">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                    <a href="" class="social__link click">
+                        <i class="fa-solid fa-file-pdf"></i>
+                    </a>
+                    <a href="" class="social__link click">
+                        <i class="fa-solid fa-envelope"></i>
+                    </a>
+                </div>
                 </p>
             </div>
-    </header>
+        </header>
         <button class="mail__taste click" onclick="ToggleModal()">
             <i class="fa-solid fa-envelope"></i>
         </button>
         <a href="#projekte" class="scroll">
-            <div class="scroll__icon"></div>    
+            <div class="scroll__icon"></div>
         </a>
         <div class="modal">
             <div class="modal__half modal__about">
                 <h3 class="modal__titel modal__titel--about">Hier ist etwas mehr über mich</h3>
                 <h4 class="modal__sub-titel modal__sub-titel--about">Lorem ipsum dolor sit.</h4>
                 <p class="modal__para">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus minus fugiat quibusdam quasi. Debitis, provident. Iste, omnis. Voluptatum placeat tempora ab cum, accusantium, aliquam, porro enim quod itaque deleniti pariatur.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus minus fugiat quibusdam quasi.
+                    Debitis, provident. Iste, omnis. Voluptatum placeat tempora ab cum, accusantium, aliquam, porro enim
+                    quod itaque deleniti pariatur.
                     <br>
                     <br>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas possimus nostrum atque reiciendis aliquam nemo et quia cupiditate quaerat eaque quisquam nam deserunt delectus voluptatibus recusandae dolorum, non veniam! Perspiciatis.
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas possimus nostrum atque reiciendis
+                    aliquam nemo et quia cupiditate quaerat eaque quisquam nam deserunt delectus voluptatibus recusandae
+                    dolorum, non veniam! Perspiciatis.
                 </p>
                 <div class="modal__sprachen">
                     <figure class="modal__sprache">
@@ -98,132 +107,155 @@
             </div>
             <div class="modal__half modal__kontakt">
                 <i class="fas fa-times modal__exit click" onclick="ToggleModal()"></i>
-                    <h3 class="modal__titel modal__titel--kontakt">Lass uns reden</h3>
-                    <h3 class="modal__sub-titel modal__sub-titel--kontakt">
-                         Lorem ipsum dolor sit amet consectetur.
-                    </h3>
-                    <form id="kontakt__form" onsubmit="Kontakt(event)">
-                        <div class="form__item">
-                            <label class="form__item--label">Name</label>
-                            <input class="input" name="user_name" type="text" required></input>
-                        </div>
-                        <div class="form__item">
-                            <label class="form__item--label">E-Mail</label>
-                            <input class="input" name="user_email" type="email" required></input>
-                        </div>
-                        <div class="form__item">
-                            <label class="form__item--label">Nachricht</label>
-                            <textarea class="input" name="nachricht" type="text" required></textarea>
-                        </div>
-                        <div class="taste__wrapper">
-                            <button id="kontakt__submit" class="form__submit">Schicken</button> 
-                        </div>
-                    </form>
-                    <div class="modal__overlay modal__overlay--laden">
-                        <i class="fas fa-spinner"> </i>
+                <h3 class="modal__titel modal__titel--kontakt">Lass uns reden</h3>
+                <h3 class="modal__sub-titel modal__sub-titel--kontakt">
+                    Lorem ipsum dolor sit amet consectetur.
+                </h3>
+                <form id="kontakt__form" onsubmit="Kontakt(event)">
+                    <div class="form__item">
+                        <label class="form__item--label">Name</label>
+                        <input class="input" name="user_name" type="text" required></input>
                     </div>
-                    <div class="modal__overlay modal__overlay--ok">
-                        Vielen Dank für die Nachricht, ich freue mich darauf, bald mit Ihnen zu sprechen
+                    <div class="form__item">
+                        <label class="form__item--label">E-Mail</label>
+                        <input class="input" name="user_email" type="email" required></input>
                     </div>
+                    <div class="form__item">
+                        <label class="form__item--label">Nachricht</label>
+                        <textarea class="input" name="nachricht" type="text" required></textarea>
+                    </div>
+                    <div class="taste__wrapper">
+                        <button id="kontakt__submit" class="form__submit">Schicken</button>
+                    </div>
+                </form>
+                <div class="modal__overlay modal__overlay--laden">
+                    <i class="fas fa-spinner"> </i>
+                </div>
+                <div class="modal__overlay modal__overlay--ok">
+                    Vielen Dank für die Nachricht, ich freue mich darauf, bald mit Ihnen zu sprechen
+                </div>
             </div>
         </div>
-</section>
-<section id="projekte">
-    <div class="container">
-        <div class="row">
-            <h1 class="section__titel">einige meiner <b class="blau">Projekte</b></h1>
-            <ul class="projekt__liste">
-                <li class="projekt">
-                    <div class="projekt__wrapper">
-                        <img src="/assets/Screenshot_27.png" alt="" class="projekt__img">
-                        <div class="projekt__wrapper--hg"></div>
-                        <div class="projekt__description">
+        <img src="./assets/semi_kreis.svg" class="form form--0">
+        <img src="./assets/kreis.svg" class="form form--1">
+        <img src="./assets/squiggly.svg" class="form form--2">
+        <img src="./assets/kreis.svg" class="form form--3">
+        <img src="./assets/Dreieck.svg" class="form form--4">
+        <img src="./assets/kreis.svg" class="form form--5">
+        <img src="./assets/squiggly.svg" class="form form--6">
+        <img src="./assets/kreis.svg" class="form form--7">
+        <img src="./assets/semi_kreis.svg" class="form form--8">
+    </section>
+    <section id="projekte">
+        <div class="container">
+            <div class="row">
+                <h1 class="section__titel">einige meiner <b class="blau">Projekte</b></h1>
+                <ul class="projekt__liste">
+                    <li class="projekt">
+                        <div class="projekt__wrapper">
+                            <img src="/assets/Screenshot_1.png" alt="" class="projekt__img">
+                            <div class="projekt__wrapper--hg"></div>
+                            <div class="projekt__description">
                                 <h3 class="projekt__description--titel">
                                     E-Commerce Shop
                                 </h3>
                                 <h4 class="projekt__description--sub-titel">
-                                    HTML, CSS, JAVASCRIPT, REACT, 
+                                    HTML, CSS, JAVASCRIPT, REACT,
                                 </h4>
-                                <p class="projekt__descripiton--para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas, aliquid. Accusamus numquam non ullam ex at, animi quam est qui! Atque enim, at labore voluptatibus cum deserunt soluta nam eos!</p>
+                                <p class="projekt__descripiton--para">Lorem ipsum dolor sit amet, consectetur
+                                    adipisicing elit. Quas, aliquid. Accusamus numquam non ullam ex at, animi quam est
+                                    qui! Atque enim, at labore voluptatibus cum deserunt soluta nam eos!</p>
                                 <div class="projekt__description--links">
-                                    <a href="https://github.com/MDDakki/React-E-Commerce" class="projekt__description--link">
+                                    <a href="https://github.com/MDDakki/React-E-Commerce"
+                                        class="projekt__description--link">
                                         <i class="fa-brands fa-github"></i>
                                     </a>
-                                    <a href="https://react-e-commerce-seven-sandy.vercel.app/" target="_blanks" class="projekt__description--link">
+                                    <a href="https://react-e-commerce-seven-sandy.vercel.app/" target="_blanks"
+                                        class="projekt__description--link">
                                         <i class="fas fa-link"></i>
                                     </a>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                </li>
-                <li class="projekt">
-                    <div class="projekt__wrapper">
-                        <img src="/assets/Screenshot_27.png" alt="" class="projekt__img">
-                        <div class="projekt__wrapper--hg"></div>
-                        <div class="projekt__description">
+                    </li>
+                    <li class="projekt">
+                        <div class="projekt__wrapper">
+                            <img src="/assets/Screenshot_1.png" alt="" class="projekt__img">
+                            <div class="projekt__wrapper--hg"></div>
+                            <div class="projekt__description">
                                 <h3 class="projekt__description--titel">
                                     E-Commerce Shop
                                 </h3>
                                 <h4 class="projekt__description--sub-titel">
-                                    HTML, CSS, JAVASCRIPT, REACT, 
+                                    HTML, CSS, JAVASCRIPT, REACT,
                                 </h4>
-                                <p class="projekt__descripiton--para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas, aliquid. Accusamus numquam non ullam ex at, animi quam est qui! Atque enim, at labore voluptatibus cum deserunt soluta nam eos!</p>
+                                <p class="projekt__descripiton--para">Lorem ipsum dolor sit amet, consectetur
+                                    adipisicing elit. Quas, aliquid. Accusamus numquam non ullam ex at, animi quam est
+                                    qui! Atque enim, at labore voluptatibus cum deserunt soluta nam eos!</p>
                                 <div class="projekt__description--links">
-                                    <a href="https://github.com/MDDakki/React-E-Commerce" class="projekt__description--link">
+                                    <a href="https://github.com/MDDakki/React-E-Commerce"
+                                        class="projekt__description--link">
                                         <i class="fa-brands fa-github"></i>
                                     </a>
-                                    <a href="https://react-e-commerce-seven-sandy.vercel.app/" target="_blanks" class="projekt__description--link">
+                                    <a href="https://react-e-commerce-seven-sandy.vercel.app/" target="_blanks"
+                                        class="projekt__description--link">
                                         <i class="fas fa-link"></i>
                                     </a>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                </li>
-                <li class="projekt">
-                    <div class="projekt__wrapper">
-                        <img src="/assets/Screenshot_27.png" alt="" class="projekt__img">
-                        <div class="projekt__wrapper--hg"></div>
-                        <div class="projekt__description">
+                    </li>
+                    <li class="projekt">
+                        <div class="projekt__wrapper">
+                            <img src="/assets/Screenshot_1.png" alt="" class="projekt__img">
+                            <div class="projekt__wrapper--hg"></div>
+                            <div class="projekt__description">
                                 <h3 class="projekt__description--titel">
                                     E-Commerce Shop
                                 </h3>
                                 <h4 class="projekt__description--sub-titel">
-                                    HTML, CSS, JAVASCRIPT, REACT, 
+                                    HTML, CSS, JAVASCRIPT, REACT,
                                 </h4>
-                                <p class="projekt__descripiton--para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas, aliquid. Accusamus numquam non ullam ex at, animi quam est qui! Atque enim, at labore voluptatibus cum deserunt soluta nam eos!</p>
+                                <p class="projekt__descripiton--para">Lorem ipsum dolor sit amet, consectetur
+                                    adipisicing elit. Quas, aliquid. Accusamus numquam non ullam ex at, animi quam est
+                                    qui! Atque enim, at labore voluptatibus cum deserunt soluta nam eos!</p>
                                 <div class="projekt__description--links">
-                                    <a href="https://github.com/MDDakki/React-E-Commerce" class="projekt__description--link">
+                                    <a href="https://github.com/MDDakki/React-E-Commerce"
+                                        class="projekt__description--link">
                                         <i class="fa-brands fa-github"></i>
                                     </a>
-                                    <a href="https://react-e-commerce-seven-sandy.vercel.app/" target="_blanks" class="projekt__description--link">
+                                    <a href="https://react-e-commerce-seven-sandy.vercel.app/" target="_blanks"
+                                        class="projekt__description--link">
                                         <i class="fas fa-link"></i>
                                     </a>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                </li>
-            </ul>
-        </div>
-    </div>
-</section>
-<footer>
-    <div class="container">
-        <div class="footer__row">
-            <figure class="footer__logo-container">
-                <img class="footer__img" src="/assets/MD-17-1-2024 (2).png" alt="Logo">
-            </figure>
-            <div class="footer__social--liste">
-                <a href="#" class="footer__social--link link__schweben  link__schweben--white">GITHUB</a>
-                <a href="#" class="footer__social--link link__schweben  link__schweben--white" onclick="ToggleModal()">KONTAKT</a>
-                <a href="#" class="footer__social--link l ink__schweben  link__schweben--white">LEBENSLAUF</a>
+                    </li>
+                </ul>
             </div>
         </div>
-        <div class="footer__copyright">
-            <p>&copy; 2024 Mohamad Dakki. All rights reserved.</p>
+    </section>
+    <footer>
+        <div class="container">
+            <div class="footer__row">
+                <figure class="footer__logo-container">
+                    <img class="footer__img" src="/assets/MD-17-1-2024 (2).png" alt="Logo">
+                </figure>
+                <div class="footer__social--liste">
+                    <a href="#" class="footer__social--link link__schweben  link__schweben--white">GITHUB</a>
+                    <a href="#" class="footer__social--link link__schweben  link__schweben--white"
+                        onclick="ToggleModal()">KONTAKT</a>
+                    <a href="#" class="footer__social--link l ink__schweben  link__schweben--white">LEBENSLAUF</a>
+                </div>
+            </div>
+            <div class="footer__copyright">
+                <p>&copy; 2024 Mohamad Dakki. All rights reserved.</p>
+            </div>
         </div>
-    </div>
-</footer>
+    </footer>
 
 
 </body>
-</html> 
+
+</html>
