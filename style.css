@@ -617,6 +617,7 @@ footer {
     padding: 30px 0;
     text-align: center;
     color: white;
+    
 }
 
 .footer__row {
@@ -672,7 +673,7 @@ footer {
 /* Formen */
 
 .form {
-    position: fixed;
+    position: absolute;
     z-index: 0;
   }
   .form--0 {

@@ -62,3 +62,17 @@ function ToggleModal() {
       document.body.classList += " modal__offen";
       
 }
+
+const typedTextElement = document.getElementById('typedText');
+const textToType = 'Ich bin Mohamad';
+let index = 0;
+
+function typeText() {
+  if (index < textToType.length) {
+    typedTextElement.textContent += textToType.charAt(index);
+    index++;
+    setTimeout(typeText, 150); 
+  }
+}
+
+document.addEventListener('DOMContentLoaded', typeText);
